@@ -21,11 +21,11 @@ const nameObj = {
 const valP = document.querySelector('.wrapper p')
 const valH2 = document.querySelector('.wrapper h2')
 
-const colors = ['white', 'red']
+const colors = ['#eefc91', '#f66fdd']
 let flag = true
 
 function showName(nameObj, valH2) {
-    valH2.innerHTML = nameObj[Math.floor(Math.random() * Object.entries(nameObj).length - 1)];
+    valH2.innerHTML = nameObj[Math.floor(Math.random() * Object.entries(nameObj).length)];
 }
 setInterval(showName, 6000, nameObj, valH2);
 
